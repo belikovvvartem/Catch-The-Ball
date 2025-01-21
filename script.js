@@ -7,6 +7,10 @@ let speed = 1000;
 
 
 
+ball.addEventListener("click", ()=>{
+  startGame();
+});
+
 function moveBallRandomly() {
     const fieldRect = field.getBoundingClientRect();
     const ballSize = ball.offsetWidth;
