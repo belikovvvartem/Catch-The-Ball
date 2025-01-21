@@ -51,10 +51,14 @@ ball.addEventListener("click", ()=>{
   count += 10; 
   counter.textContent = count; 
   counter.style.color = "greenyellow";
+  field.style.background = "rgba(172, 255, 47, 0.543)";
 
   setTimeout(() => {
     counter.style.color = "white";
   }, 1000);
+  setTimeout(() => {
+    field.style.background = "#AECCC6";
+  }, 100);
   event.stopPropagation();
 });
 
@@ -64,10 +68,15 @@ field.addEventListener("click", ()=>{
     counter.textContent = count; 
 
     counter.style.color = "red";
+    field.style.background = "rgba(255, 0, 0, 0.543)";
 
     setTimeout(() => {
       counter.style.color = "white";
     }, 1000);
+      setTimeout(() => {
+    field.style.background = "#AECCC6";
+  }, 100);
+    
   });
 
 
